@@ -1,17 +1,6 @@
-Page Preloading Animation
+Version 2.0 of my website; A complete overhaul!
 =========
 
-A simple page preloading animation based on the effect seen on [Fontface Ninja](http://fontface.ninja/)
+Doing a redesign of my personal website, making it prettier and more functional. 
 
-[Article on Codrops](http://tympanus.net/codrops/?p=19535)
-
-[Demo](http://tympanus.net/Tutorials/PagePreloadingEffect/)
-
-Browser by [Keyners](http://keyners.com)
-Logo made from GraphicBurger template: [5 Vintage Labels / Insignias Vol.1](http://graphicburger.com/5-vintage-labels-insignias-vol-1/)
-
-Integrate or build upon it for free in your personal or commercial projects. Don't republish, redistribute or sell "as-is". 
-
-Read more here: [License](http://tympanus.net/codrops/licensing/)
-
-[© Codrops 2014](http://www.codrops.com)
+I'd like to thank the internet for its vast resources and tutorials for helping me build this (so far). Couldn't have made it look so awesome without you.
