@@ -1,0 +1,300 @@
+@import url(http://fonts.googleapis.com/css?family=Raleway:300,400,700);
+@font-face {
+	font-weight: normal;
+	font-style: normal;
+	font-family: 'codropsicons';
+	src:url('../fonts/codropsicons/codropsicons.eot');
+	src:url('../fonts/codropsicons/codropsicons.eot?#iefix') format('embedded-opentype'),
+		url('../fonts/codropsicons/codropsicons.woff') format('woff'),
+		url('../fonts/codropsicons/codropsicons.ttf') format('truetype'),
+		url('../fonts/codropsicons/codropsicons.svg#codropsicons') format('svg');
+}
+
+*, *:after, *:before { -webkit-box-sizing: border-box; box-sizing: border-box; }
+.clearfix:before, .clearfix:after { content: ''; display: table; }
+.clearfix:after { clear: both; }
+
+::selection {
+    background: #91463e;
+}
+
+body {
+	background: #333;
+	color: #fff;
+	font-weight: 400;
+	font-size: 1em;
+	font-family: 'Raleway', Arial, sans-serif;
+}
+
+a {
+	color: #f0f0f0;
+	text-decoration: none;
+	outline: none;
+}
+
+/* Demo colors */
+.demo-1 { 
+    /*background: #ef6e7e; */
+    background: #78c739;
+    /*background: url(../img/ny.jpeg) no-repeat;*/
+}
+.demo-1 a { 
+    /*color: #be4856;*/
+    /*color: #91463e;*/
+    color: #ef6e7e;
+}
+
+.demo-2 { background: #72d0f4; }
+.demo-2 a { color: #1c9ccd; }
+
+a:hover, a:focus {
+	color: #fff;
+}
+
+section {
+	padding: 1em;
+	text-align: center;
+}
+
+/* Header */
+.codrops-header {
+	margin: 0 auto;
+	padding: 2em;
+	text-align: center;
+}
+
+.codrops-header h1 {
+	margin: 0;
+	font-weight: 300;
+	font-size: 2.5em;
+	line-height: 1.3;
+}
+
+.codrops-header h1 span {
+	display: block;
+	padding: 0 0 0.6em 0.1em;
+	font-size: 60%;
+	opacity: 0.7;
+}
+
+/* To Navigation Style */
+.codrops-top {
+	width: 100%;
+	text-transform: uppercase;
+	font-weight: 700;
+	font-size: 0.69em;
+	line-height: 2.2;
+}
+
+.codrops-top a {
+	display: inline-block;
+	padding: 2em;
+	text-decoration: none;
+	letter-spacing: 1px;
+}
+
+.codrops-top span.right {
+	float: right;
+}
+
+.codrops-top span.right a {
+	display: block;
+	float: left;
+}
+
+.codrops-icon:before {
+	margin: 0 4px;
+	text-transform: none;
+	font-weight: normal;
+	font-style: normal;
+	font-variant: normal;
+	font-family: 'codropsicons';
+	line-height: 1;
+	speak: none;
+	-webkit-font-smoothing: antialiased;
+}
+
+.codrops-icon-drop:before {
+	content: "\e001";
+}
+
+.codrops-icon-prev:before {
+	content: "\e004";
+}
+
+/* Demo Buttons Style */
+.codrops-demos {
+	padding: 2em 0 1em;
+	font-size: 0.8em;
+	text-align: center;
+}
+
+.codrops-demos a {
+	display: inline-block;
+	margin: 0.5em 0.75em;
+	line-height: 1.5;
+	outline: none;
+	text-decoration: none;
+	text-transform: uppercase;
+	letter-spacing: 1px;
+	font-weight: 700;
+}
+
+.codrops-demos a.current-demo {
+	color: inherit;
+}
+
+/* Related demos */
+.related {
+	padding: 2em 0 3em;
+    word-wrap: break-word;
+}
+
+.related p {
+    word-wrap: break-word;
+	font-size: 1.25em;
+	font-weight: 700;
+}
+
+.related > a {
+	border: 2px solid #000;
+	border-color: initial;
+	display: inline-block;
+	text-align: center;
+	margin: 20px 10px 0px;
+	padding: 30px 20px 20px;
+}
+
+.related a img {
+	max-width: 80%;
+	opacity: 0.8;
+}
+
+.related a:hover img,
+.related a:active img {
+	opacity: 1;
+}
+
+.related a:hover {
+    color: #fff;
+}
+
+.related a h3 {
+    font-size: 1.5em;
+	margin: 0;
+	padding: 0.5em 0.5em 0.3em;
+	max-width: 350px;
+	text-align: center;
+}
+
+/* Demo ad design */
+body #cdawrap {
+	background: none;
+	top: 50px;
+	opacity: 0;
+	-webkit-transition: opacity 0.3s 1.2s;
+	transition: opacity 0.3s 1.2s;
+	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+body {
+    padding-top: 100px;
+}
+
+body #cdawrap a {
+	color: #fff !important;
+}
+
+body .loaded ~ #cdawrap {
+	opacity: 1;
+}
+
+body #cdawrap #cda-remove {
+	top: 20px;
+	right: 25px;
+	width: 20px;
+	height: 20px;
+	opacity: 0;
+}
+
+body #cdawrap:hover #cda-remove {
+	opacity: 1;
+}
+
+@media screen and (max-width: 35em) {
+	.codrops-icon span {
+		display: none;
+	}
+}
+
+.nav-center {
+    margin: 0;
+    float: none;
+    padding-top: 20px;
+}
+
+.navbar-inner {
+    text-align: center;
+    min-height: 80px;
+}
+
+section.About .plswork {
+    font-family: 'Open Sans', sans-serif;
+    border-radius: 8px;
+    background: rgba(0, 0, 0, 0.13);
+    padding: 10px 0 1.5em;
+}
+
+section.About h2 {
+    color: #fff;
+    font-size: 2.5em;
+    text-shadow: 0.75px 0.75px #447120;
+    font-weight: 600;
+}
+
+section.About p {
+    font-size: 1.3em;
+}
+
+/* Pls buttons div */
+#contact-buttons {
+    padding-top: 50px;
+    text-align: center;
+}
+
+/* Pls buttons pls owrk pls */
+.pls-btn {
+    border-radius: 8px;
+    padding: 10px 40px;
+    text-decoration: none !important;
+    font-family: 'Montserrat', sans-serif;
+    color: #fff !important;
+    position: relative;
+    display: inline-block;
+    
+}
+
+.pls-btn:active {
+    transform: translate(0, 5px);
+    -webkit-transform: translate(0, 5px);
+    box-shadow: 0px 1px 0px 0px;
+}
+
+.orange {
+    background: #4b97ff;
+    box-shadow: 0px 5px 0px 0px #3b81e1;
+}
+
+section.Footer {
+    padding-top: 50px;
+    /*background: #91463e;*/
+    background: #363636;
+}
+
+section.Footer .links {
+    display: block;   
+}
+
+section.Footer a {
+    color: #fff;   
+}

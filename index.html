@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge"> 
+		<meta name="viewport" content="width=device-width, initial-scale=1"> 
+		<title>Website 2.0</title>
+		<meta name="description" content="Page Preloading Effect: Re-creating the effect seen on fontface.ninja" />
+		<meta name="keywords" content="page loading, effect, initial, logo, sliding, web design, css animation, transform" />
+		<meta name="author" content="Codrops" />
+		<link rel="shortcut icon" href="../favicon.ico">
+		<link rel="stylesheet" type="text/css" href="css/normalize.css" />
+		<link rel="stylesheet" type="text/css" href="css/demo.css" />
+		<link rel="stylesheet" type="text/css" href="css/effect1.css" />
+		<script src="js/modernizr.custom.js"></script>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+        
+        <!-- Fonts -->
+        <!-- Roboto Slab -->
+        <link href='http://fonts.googleapis.com/css?family=Roboto+Slab' rel='stylesheet' type='text/css'>
+        <!-- Montserrat -->
+        <link href='http://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet' type='text/css'>
+        <!-- Open Sans -->
+        <link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
+        
+	</head>
+	<body class="demo-1">
+		<div id="ip-container" class="ip-container">
+			<!-- initial header -->
+			<header class="ip-header">
+				<h1 class="ip-logo">
+                    <a href="index.html" class="svg">
+				    <svg class="ip-inner" width="100%" height="100%" viewBox="0 0 300 160" preserveAspectRatio="xMidYMin meet" aria-labelledby="logo_title">
+				        <title id="logo_title">Delightful Demonstrations by Codrops</title>
+			            <path fill="#FF0000" d="M188.5,209.8c6.3,6.3,12.3,12.3,18.5,18.4c-4.8,4.5-10,8.7-15.8,12.2c-6.4,3.9-13,7.1-20.3,9
+				c-7.4,2-15,3-22.7,3c-7.4,0-14.6-0.9-21.6-2.9c-9.6-2.7-18.2-7.3-26.2-13.3c-4.3-3.3-8.3-6.8-12-10.7
+				c-11.7-12.3-19.5-26.6-22-43.6c-2-13.7-1-27.1,3.5-40.3c3.4-9.8,8.6-18.6,15.2-26.5c1.3-1.6,2.6-3.2,3.7-4.6
+				c6.3,6.3,12.5,12.5,18.8,18.8c-10.6,11.7-15.7,26-14.9,42.1c0.6,11.4,5.1,21.5,12.2,30.4c5,6.2,10.9,11.5,17.8,15.3
+				c6.9,3.8,14.3,6.3,22.3,6.9c7.9,0.5,15.6-0.2,23.2-2.5C176.2,219.3,182.5,214.7,188.5,209.8z"/>
+			            <path fill="#FF0000" d="M190.1,127.2c-0.3-0.4-0.6-0.9-1-1.2c-12.5-12.6-25.1-25.1-37.7-37.7c-0.4-0.4-0.9-0.8-1.4-1.3
+				c-12.8,12.8-25.5,25.6-38.1,38.3c-6.4-6.4-12.6-12.6-18.5-18.5c19.2-19.2,38.6-38.6,58.1-58.1c0.2,0.2,0.6,0.5,1.1,1
+				c18.9,18.9,37.8,37.8,56.7,56.7c0.4,0.4,0.8,0.9,1.2,1.4c-5.9,6-11.8,11.8-17.7,17.8C192,126.3,191.5,127.4,190.1,127.2z"/>
+			            <path fill="#FF0000" d="M190.1,127.2c4-4,8.1-7.9,12.1-11.9c2.2-2.2,4.4-4.5,6.6-6.7c0.5-0.5,0.9-0.7,1.6-0.7
+				c5.1,5.2,9.8,10.7,13.5,17c5.1,8.4,8.8,17.4,10.3,27.1c1.1,7,1.4,13.9,0.8,21c-0.7,8.2-2.5,16.2-5.7,23.7
+				c-3.6,8.8-8.6,16.7-15,23.8c-1.2,1.3-2,2.9-3.3,3.7c-6.1-6.1-12.1-12.1-18.4-18.4c0-0.2,0.5-0.8,1-1.4
+				c6.7-7.1,10.8-15.7,12.5-25.2c3.1-17.3-0.3-33.1-11.5-47C193.1,130.4,191.4,129,190.1,127.2z"/>
+			            <path fill="#FF0000" d="M113.8,163.8c1.3-0.7,2.5-1.1,3.8-1.3c7,13.2,17.4,21,32.7,21c15.2-0.1,25.6-7.9,32.5-21
+				c0.6,0.3,1.2,0.5,1.7,0.8c0.6,0.2,1.1,0.5,1.7,0.7c-2.6,9.7-15.3,21.7-30.3,23.7C136.6,190.2,119.9,178.8,113.8,163.8z"/>
+			            <path fill="#FF0000" d="M135.2,150.5c-0.3,2.1-1.5,3.4-3.9,3.8c-2-0.2-3.4-1.4-3.8-3.8c0.2-2.1,1.4-3.5,3.8-3.8
+				C133.4,146.8,134.8,148,135.2,150.5z"/>
+			            <path fill="#FF0000" d="M173,150.5c-0.3,2.2-1.6,3.6-3.9,3.8c-2.2-0.3-3.5-1.6-3.8-3.8c0.3-2.2,1.6-3.6,3.9-3.8
+				C171.4,146.9,172.7,148.2,173,150.5z"/>
+					</svg>
+                    </a>
+				</h1>
+				<div class="ip-loader">
+					<svg class="ip-inner" width="60px" height="60px" viewBox="0 0 80 80">
+						<path class="ip-loader-circlebg" d="M40,10C57.351,10,71,23.649,71,40.5S57.351,71,40.5,71 S10,57.351,10,40.5S23.649,10,40.5,10z"/>
+						<path id="ip-loader-circle" class="ip-loader-circle" d="M40,10C57.351,10,71,23.649,71,40.5S57.351,71,40.5,71 S10,57.351,10,40.5S23.649,10,40.5,10z"/>
+					</svg>
+				</div>
+			</header>
+			<!-- top bar -->
+            <!--
+			<div class="codrops-top clearfix">
+				<a class="codrops-icon codrops-icon-prev" href="http://tympanus.net/Development/FullscreenForm/"><span></span></a>
+				<span class="right"><a class="codrops-icon codrops-icon-drop" href="http://tympanus.net/codrops/?p=19535"><span></span></a></span>
+			</div>-->
+            <!-- Navbar -->
+
+			<!-- main content -->
+			<div class="ip-main">
+                <!--
+				<nav class="codrops-demos">
+					<a class="current-demo" href="index.html">Demo 1</a>
+					<a href="index2.html">Demo 2</a>
+				</nav>-->
+				<h2>Hi, I'm Chris.</h2>
+                
+                <h3>
+                    <span class="default">I love</span>
+                    <span class="programming">programming</span>
+                    <span class="default">and</span>
+                    <span class="design">design.</span>
+                </h3>
+                
+                <!-- Button "learn more" -->
+                <a class="nice-button light-blue">
+                    <span>Learn more</span>
+                </a>
+                
+                <!--
+                <a class="pls-btn orange">Learn more</a>-->
+                
+				<!-- related demos -->
+                <!--
+				<section class="related">
+					<p>Check out some stuff I've hacked together:</p>
+                    <div class="item">
+                    <div class="browser clearfix">
+                        <a href="http://tympanus.net/Development/HeaderEffects/">
+                            <img src="img/relatedposts/HeaderEffects.jpg" alt="Header Effects"/>
+                            <h3>On-Scroll Header Effects</h3>
+                        </a>
+                    </div>
+                    </div>
+                    
+                    <div class="item">
+                    <div class="browser clearfix">
+                        <a href="http://tympanus.net/Development/ArticleIntroEffects/">
+                            <img src="img/relatedposts/ArticleIntroEffects.png" alt="Article Intro Effects" />
+                            <h3>Article Intro Effects</h3>
+                        </a>
+                    </div>
+                    </div>
+                    
+                    <div class="item">
+                    <div class="browser clearfix">
+                        <a href="http://tympanus.net/Development/ArticleIntroEffects/">
+                            <img src="img/relatedposts/ArticleIntroEffects.png" alt="Article Intro Effects" />
+                            <h3>Article Intro Effects</h3>
+                        </a>
+                    </div>
+                    </div>
+                    
+                    <div class="item">
+                    <div class="browser clearfix">
+                        <a href="http://tympanus.net/Development/ArticleIntroEffects/">
+                            <img src="img/relatedposts/ArticleIntroEffects.png" alt="Article Intro Effects" />
+                            <h3>Article Intro Effects</h3>
+                        </a>
+                    </div>
+                    </div>
+                    
+                    <div class="browser clearfix">
+                        <a href="http://tympanus.net/Development/ArticleIntroEffects/">
+                            <img src="img/relatedposts/ArticleIntroEffects.png" alt="Article Intro Effects" />
+                            <h3>Article Intro Effects</h3>
+                        </a>
+                    </div>
+                    
+                    <div class="browser clearfix">
+                        <a href="http://tympanus.net/Development/ArticleIntroEffects/">
+                            <img src="img/relatedposts/ArticleIntroEffects.png" alt="Article Intro Effects" />
+                            <h3>Article Intro Effects</h3>
+                        </a>
+                    </div>
+                    
+				</section> -->
+			</div>
+		</div><!-- /container -->
+        
+        <!-- About me -->
+        <section class="About">
+            <div class="container plswork">
+                <div class="row">
+                    <div class="col-lg-8 col-lg-offset-2 text-center">
+                        <h2>Who am I</h2>
+                    </div>
+                </div>
+                
+                <div class="row">
+                    <div class="col-lg-8 col-lg-offset-2">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                    </div>
+                </div>
+                
+                <div class="row">
+                    <div class="col-lg-6 col-lg-offset-3">
+                        <div id="contact-buttons">
+                            <a class="pls-btn orange">Resume</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <section class="related">
+            <p>Check out some stuff I've hacked together:</p>
+            <div class="item">
+            <div class="browser clearfix">
+                <a href="http://tympanus.net/Development/HeaderEffects/">
+                    <img src="img/relatedposts/HeaderEffects.jpg" alt="Header Effects"/>
+                    <h3>Projects</h3>
+                    <p>Check out projects I'm working on right now and have worked on in the past!</p>
+                </a>
+            </div>
+            </div>
+
+            <div class="item">
+            <div class="browser clearfix">
+                <a href="http://tympanus.net/Development/ArticleIntroEffects/">
+                    <img src="img/relatedposts/ArticleIntroEffects.png" alt="Article Intro Effects" />
+                    <h3>Portfolio</h3>
+                    <p>I like to do design work, here are some things I've created!</p>
+                </a>
+            </div>
+            </div>
+
+            <div class="item">
+            <div class="browser clearfix">
+                <a href="http://tympanus.net/Development/ArticleIntroEffects/">
+                    <img src="img/relatedposts/ArticleIntroEffects.png" alt="Article Intro Effects" />
+                    <h3>Resume</h3>
+                    <p>My (hopefully) up-to-date resume for you to look at!</p>
+                </a>
+            </div>
+            </div>
+
+        </section>
+        
+        <section class="Footer" id="footer">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12 text-center">
+                        Hello
+                    </div>
+                </div>
+                
+                <div class="row">
+                    <div class="col-lg-4 text-center links">
+                        <a href="#">LINK</a>
+                        <a href="#">LINK</a>
+                        <a href="#">LINK</a>
+                        <a href="#">LINK</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+            
+        </div>
+        
+        
+		<script src="js/classie.js"></script>
+		<script src="js/pathLoader.js"></script>
+		<script src="js/main.js"></script>
+	</body>
+</html>
