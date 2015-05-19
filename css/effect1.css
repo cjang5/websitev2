@@ -168,6 +168,7 @@
             transition: all 0.4s;
 }
 
+/* Div for the actual buttons in the navbar */
 .pseudo-nav .pn-buttons {
     padding-top: 5px;
 }
