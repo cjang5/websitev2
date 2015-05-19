@@ -113,7 +113,7 @@
     font-family: 'Roboto Slab', sans-serif;
     font-weight: lighter;
     margin: 0;
-    padding: 0.5em 0 3em;
+    padding: 0.5em 0 0px;
     color: #fff;
     text-align: center;
     font-size: 3.0em;
@@ -137,6 +137,52 @@
     text-shadow: 2px 2px #447120;
 }
 
+/* Pseudo nav bar wrapper */
+.pseudo-nav-wrapper {
+    padding-bottom: 2em;
+}
+
+/* Pseudo nav bar */
+.pseudo-nav {
+    z-index: 50;
+    margin-top: -50px;
+    width: 100%;
+    text-align: center;
+    margin-bottom: 12vw;
+}
+
+.pseudo-nav h3 {
+    margin-top: 5px;
+    padding-top: 5px;
+    font-size: 1.3em;
+}
+
+.pseudo-nav .nav-bg {
+    -webkit-transition: all 0.4s;
+       -moz-transition: all 0.4s;
+         -o-transition: all 0.4s;
+            transition: all 0.4s;
+}
+
+.pseudo-nav .pn-buttons {
+    padding-top: 5px;
+}
+
+.wrapper-adjust {
+    margin-bottom: -50px;
+}
+
+.test-nav-scrolled {
+    position: fixed;
+    margin-top: 0;
+    top: 0;
+    width: 100%;
+}
+
+.bg-white {
+    background: white;
+}
+
 /* Animate the button */
 .animate {
     -webkit-transition: all 0.1s;
@@ -150,7 +196,8 @@
     position: relative;
     display: inline-block;
     color: #fff !important;
-    font-family: 'Montserrat', monaco, monospace;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.25em;
     margin: 0px 10px 10px 0px;
     padding: 10px 40px;
     border-radius: 8px; /* Round corners */
@@ -332,7 +379,9 @@ section.Middle {
 .loaded .ip-main h2,
 .loaded .ip-main h3,
 .loaded .ip-main .nice-button,
+.loaded .ip-main .pseudo-nav,
 .loaded .ip-main .browser,
+.loaded .pseudo-nav,
 .loaded .ip-main .browser .box,
 .loaded .codrops-demos {
 	-webkit-animation: animLoadedContent 1s cubic-bezier(0.7,0,0.3,1) both;
@@ -340,7 +389,7 @@ section.Middle {
 }
 
 .loaded .ip-main .browser,
-.loaded .ip-main .nice-button,
+.loaded .ip-main .pseudo-nav,
 .loaded .ip-main .browser .box:first-child {
 	-webkit-animation-delay: 0.15s;
 	animation-delay: 0.15s;

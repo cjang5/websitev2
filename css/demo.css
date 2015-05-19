@@ -26,6 +26,10 @@ body {
 	font-family: 'Raleway', Arial, sans-serif;
 }
 
+.ip-container {
+    width: 100%;   
+}
+
 a {
 	color: #f0f0f0;
 	text-decoration: none;
@@ -227,22 +231,12 @@ body #cdawrap:hover #cda-remove {
 	}
 }
 
-.nav-center {
-    margin: 0;
-    float: none;
-    padding-top: 20px;
-}
-
-.navbar-inner {
-    text-align: center;
-    min-height: 80px;
-}
-
 section.About .plswork {
     font-family: 'Open Sans', sans-serif;
     border-radius: 8px;
     background: rgba(0, 0, 0, 0.13);
     padding: 10px 0 1.5em;
+    margin-top: 100px;
 }
 
 section.About h2 {
@@ -262,6 +256,14 @@ section.About p {
     text-align: center;
 }
 
+/* Animations for the buttons */
+.animate {
+    -webkit-transition: all 0.1s;
+       -moz-transition: all 0.1s;
+         -o-transition: all 0.1s;
+            transition: all 0.1s;
+}
+
 /* Pls buttons pls owrk pls */
 .pls-btn {
     border-radius: 8px;
@@ -272,12 +274,20 @@ section.About p {
     position: relative;
     display: inline-block;
     
+    /* Don't make it selectable */
+    -webkit-user-select: none;  
+       -moz-user-select: none;    
+        -ms-user-select: none;
+            user-select: none;
+    
+    /* change pointer when hovering over button */
+    cursor: pointer !important; 
 }
 
 .pls-btn:active {
     transform: translate(0, 5px);
     -webkit-transform: translate(0, 5px);
-    box-shadow: 0px 1px 0px 0px;
+    box-shadow: 0px 1px 0px 0px #3b81e1;
 }
 
 .orange {

@@ -14,7 +14,6 @@
 		<link rel="stylesheet" type="text/css" href="css/effect1.css" />
 		<script src="js/modernizr.custom.js"></script>
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
-        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
         
         <!-- Fonts -->
         <!-- Roboto Slab -->
@@ -23,6 +22,8 @@
         <link href='http://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet' type='text/css'>
         <!-- Open Sans -->
         <link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
+        <!-- Nunito -->
+        <link href='http://fonts.googleapis.com/css?family=Nunito' rel='stylesheet' type='text/css'>
         
 	</head>
 	<body class="demo-1">
@@ -78,81 +79,38 @@
 				</nav>-->
 				<h2>Hi, I'm Chris.</h2>
                 
-                <h3>
+                <h3 id="header3">
                     <span class="default">I love</span>
                     <span class="programming">programming</span>
                     <span class="default">and</span>
                     <span class="design">design.</span>
                 </h3>
-                
-                <!-- Button "learn more" -->
-                <a class="nice-button light-blue">
-                    <span>Learn more</span>
-                </a>
-                
-                <!--
-                <a class="pls-btn orange">Learn more</a>-->
-                
-				<!-- related demos -->
-                <!--
-				<section class="related">
-					<p>Check out some stuff I've hacked together:</p>
-                    <div class="item">
-                    <div class="browser clearfix">
-                        <a href="http://tympanus.net/Development/HeaderEffects/">
-                            <img src="img/relatedposts/HeaderEffects.jpg" alt="Header Effects"/>
-                            <h3>On-Scroll Header Effects</h3>
-                        </a>
-                    </div>
-                    </div>
-                    
-                    <div class="item">
-                    <div class="browser clearfix">
-                        <a href="http://tympanus.net/Development/ArticleIntroEffects/">
-                            <img src="img/relatedposts/ArticleIntroEffects.png" alt="Article Intro Effects" />
-                            <h3>Article Intro Effects</h3>
-                        </a>
-                    </div>
-                    </div>
-                    
-                    <div class="item">
-                    <div class="browser clearfix">
-                        <a href="http://tympanus.net/Development/ArticleIntroEffects/">
-                            <img src="img/relatedposts/ArticleIntroEffects.png" alt="Article Intro Effects" />
-                            <h3>Article Intro Effects</h3>
-                        </a>
-                    </div>
-                    </div>
-                    
-                    <div class="item">
-                    <div class="browser clearfix">
-                        <a href="http://tympanus.net/Development/ArticleIntroEffects/">
-                            <img src="img/relatedposts/ArticleIntroEffects.png" alt="Article Intro Effects" />
-                            <h3>Article Intro Effects</h3>
-                        </a>
-                    </div>
-                    </div>
-                    
-                    <div class="browser clearfix">
-                        <a href="http://tympanus.net/Development/ArticleIntroEffects/">
-                            <img src="img/relatedposts/ArticleIntroEffects.png" alt="Article Intro Effects" />
-                            <h3>Article Intro Effects</h3>
-                        </a>
-                    </div>
-                    
-                    <div class="browser clearfix">
-                        <a href="http://tympanus.net/Development/ArticleIntroEffects/">
-                            <img src="img/relatedposts/ArticleIntroEffects.png" alt="Article Intro Effects" />
-                            <h3>Article Intro Effects</h3>
-                        </a>
-                    </div>
-                    
-				</section> -->
 			</div>
+            
+            <div class="pseudo-nav-wrapper">
+                <div class="pseudo-nav" id="pnav">
+                    <div class="nav-bg">
+                        <div class="pn-buttons">
+                            <a href="#about" class="nice-button light-blue">
+                                <span>Student</span>
+                            </a>
+
+                            <a href="#about" class="nice-button light-blue">
+                                <span>Developer</span>
+                            </a>
+
+                            <a href="#about" class="nice-button light-blue">
+                                <span>Designer</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
 		</div><!-- /container -->
         
         <!-- About me -->
-        <section class="About">
+        <section class="About" id="about">
             <div class="container plswork">
                 <div class="row">
                     <div class="col-lg-8 col-lg-offset-2 text-center">
@@ -169,7 +127,7 @@
                 <div class="row">
                     <div class="col-lg-6 col-lg-offset-3">
                         <div id="contact-buttons">
-                            <a class="pls-btn orange">Resume</a>
+                            <a class="pls-btn animate orange">Resume</a>
                         </div>
                     </div>
                 </div>
@@ -231,9 +189,12 @@
             
         </div>
         
-        
+        <!-- Load in js files after to go faster -->
+        <script src="//code.jquery.com/jquery-1.11.3.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
 		<script src="js/classie.js"></script>
 		<script src="js/pathLoader.js"></script>
 		<script src="js/main.js"></script>
+        <script src="js/nav.js"></script>
 	</body>
 </html>
