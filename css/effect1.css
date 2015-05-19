@@ -157,6 +157,10 @@
     font-size: 1.3em;
 }
 
+/**
+ * Div wrapping the actual buttons, used for controlling
+ * the background of the "navbar"
+ */
 .pseudo-nav .nav-bg {
     -webkit-transition: all 0.4s;
        -moz-transition: all 0.4s;
