@@ -39,8 +39,13 @@ a {
 /* Demo colors */
 .demo-1 { 
     /*background: #ef6e7e; */
-    background: #78c739;
-    /*background: url(../img/ny.jpeg) no-repeat;*/
+    /*background: #78c739;*/
+    background-color: #2b2b2b;
+    background-image: url("../img/header-tile.jpg");
+    background-size: 700px 500px;
+    background-position: top;
+    /*background-repeat: no-repeat;*/
+    background-attachment: fixed;
 }
 .demo-1 a { 
     /*color: #be4856;*/
@@ -231,6 +236,10 @@ body #cdawrap:hover #cda-remove {
 	}
 }
 
+section.About {
+    background: #f5f5f5;   
+}
+
 section.About .plswork {
     font-family: 'Open Sans', sans-serif;
     border-radius: 8px;
@@ -265,7 +274,7 @@ section.About p {
 }
 
 /* Pls buttons pls owrk pls */
-.pls-btn {
+.my-btn {
     border-radius: 8px;
     padding: 10px 40px;
     text-decoration: none !important;
@@ -284,21 +293,61 @@ section.About p {
     cursor: pointer !important; 
 }
 
-.pls-btn:active {
+.my-btn:active {
     transform: translate(0, 5px);
     -webkit-transform: translate(0, 5px);
-    box-shadow: 0px 1px 0px 0px #3b81e1;
 }
 
-.orange {
+.light-blue {
     background: #4b97ff;
     box-shadow: 0px 5px 0px 0px #3b81e1;
 }
 
+.light-blue:active {
+    box-shadow: 0px 1px 0px 0px #3b81e1;   
+}
+
+.orange {
+    background: #ff983d;
+    box-shadow: 0px 5px 0px 0px #d47b2d;
+}
+
+.orange:active {
+    box-shadow: 0px 1px 0px 0px #d47b2d;   
+}
+
+/* Developer Section */
+section.Developer {
+    background: #f5f5f5;
+}
+
+section.Developer .container {
+    font-family: 'Open Sans', sans-serif;
+    border-radius: 8px;
+    background: rgba(0, 0, 0, 0.13);
+    padding: 10px 1em 1.5em;
+    margin-top: 100px;
+}
+
+/* Modal for each project */
+section.Developer .p-modal {
+    position: relative;
+    display: block;
+    text-align: center;
+    max-width: 300px;
+    margin: 0 auto 1.5em;
+}
+
+section.Developer .p-modal img {
+    border-radius: 8px;   
+}
+
+/* Footer Section  */
 section.Footer {
-    padding-top: 50px;
+    padding: 30px 50px 0px;
     /*background: #91463e;*/
-    background: #363636;
+    background: url("../img/footer-pattern.png");
+    background-size: 250px 250px;
 }
 
 section.Footer .links {
@@ -307,4 +356,22 @@ section.Footer .links {
 
 section.Footer a {
     color: #fff;   
+}
+
+/* Footer branding */
+.branding-wrapper {
+    text-align: center;
+}
+
+.branding {
+    font-family: 'Montserrat', sans-serif;
+    padding: 16px 0 15px; 
+    color: #fff;
+    /*background: rgba(0, 0, 0, 0.5);*/
+    width: 100% !important;
+    text-align: center;
+}
+
+.branding .heart {
+    color: #ff586d;
 }

@@ -15,6 +15,9 @@
 		<script src="js/modernizr.custom.js"></script>
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
         
+        <!-- Font-awesome 4.3.0 -->
+        <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+        
         <!-- Fonts -->
         <!-- Roboto Slab -->
         <link href='http://fonts.googleapis.com/css?family=Roboto+Slab' rel='stylesheet' type='text/css'>
@@ -91,15 +94,15 @@
                 <div class="pseudo-nav" id="pnav">
                     <div class="nav-bg">
                         <div class="pn-buttons">
-                            <a href="#about" class="nice-button light-blue">
+                            <a href="#about" class="nice-button orange">
                                 <span>Student</span>
                             </a>
 
-                            <a href="#about" class="nice-button light-blue">
+                            <a href="#developer" class="nice-button orange">
                                 <span>Developer</span>
                             </a>
 
-                            <a href="#about" class="nice-button light-blue">
+                            <a href="#about" class="nice-button orange">
                                 <span>Designer</span>
                             </a>
                         </div>
@@ -127,67 +130,93 @@
                 <div class="row">
                     <div class="col-lg-6 col-lg-offset-3">
                         <div id="contact-buttons">
-                            <a class="pls-btn animate orange">Resume</a>
+                            <a class="my-btn animate light-blue">Résumé</a>
                         </div>
                     </div>
                 </div>
             </div>
         </section>
         
-        <section class="related">
-            <p>Check out some stuff I've hacked together:</p>
-            <div class="item">
-            <div class="browser clearfix">
-                <a href="http://tympanus.net/Development/HeaderEffects/">
-                    <img src="img/relatedposts/HeaderEffects.jpg" alt="Header Effects"/>
-                    <h3>Projects</h3>
-                    <p>Check out projects I'm working on right now and have worked on in the past!</p>
-                </a>
-            </div>
-            </div>
-
-            <div class="item">
-            <div class="browser clearfix">
-                <a href="http://tympanus.net/Development/ArticleIntroEffects/">
-                    <img src="img/relatedposts/ArticleIntroEffects.png" alt="Article Intro Effects" />
-                    <h3>Portfolio</h3>
-                    <p>I like to do design work, here are some things I've created!</p>
-                </a>
-            </div>
-            </div>
-
-            <div class="item">
-            <div class="browser clearfix">
-                <a href="http://tympanus.net/Development/ArticleIntroEffects/">
-                    <img src="img/relatedposts/ArticleIntroEffects.png" alt="Article Intro Effects" />
-                    <h3>Resume</h3>
-                    <p>My (hopefully) up-to-date resume for you to look at!</p>
-                </a>
-            </div>
-            </div>
-
-        </section>
-        
-        <section class="Footer" id="footer">
+        <!-- Developer section to showcase projects -->
+        <section class="Developer" id="developer">
             <div class="container">
                 <div class="row">
                     <div class="col-lg-12 text-center">
-                        Hello
+                        <h2>Some Recent Work</h2>
                     </div>
                 </div>
                 
                 <div class="row">
-                    <div class="col-lg-4 text-center links">
-                        <a href="#">LINK</a>
-                        <a href="#">LINK</a>
-                        <a href="#">LINK</a>
-                        <a href="#">LINK</a>
+                    <div class="col-lg-12 text-center">
+                        <div class="col-lg-3 text-center p-modal">
+                            <a href="#">
+                                <img src="img/project-pic.png" class="img-responsive">
+                            </a>
+                        </div>
+                        
+                        <div class="col-lg-3 text-center p-modal">
+                            <a href="#">
+                                <img src="img/project-pic.png" class="img-responsive">
+                            </a>
+                        </div>
+                        
+                        <div class="col-lg-3 text-center p-modal">
+                            <a href="#">
+                                <img src="img/project-pic.png" class="img-responsive">
+                            </a>
+                        </div>
+                        
+                        <div class="col-lg-3 text-center p-modal">
+                            <a href="#">
+                                <img src="img/project-pic.png" class="img-responsive">
+                            </a>
+                        </div>
+                    </div> 
+                </div>
+                
+                <div class="row">
+                    <div class="col-lg-6 col-lg-offset-3">
+                        <div id="all-projects">
+                            <a class="my-btn animate orange">All Projects</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <section class="Footer" id="footer">
+          
+            <div class="container">
+                <div class="col-lg-12 text-center">
+                    Hello
+                </div>
+
+
+
+                <div class="col-lg-4 links">
+                    <ul>
+                        <li><a href="#">LINK</a></li>
+                        <li><a href="#">LINK</a></li>
+                        <li><a href="#">LINK</a></li>
+                        <li><a href="#">LINK</a></li>
+                        <li><a href="#">LINK</a></li>
+                    </ul>
+                </div>
+          
+    
+            
+
+                <div class="col-lg-12 branding">
+                    <div class="brand">
+                        <span>Made with </span>
+                        <span><i class="fa fa-heart heart"></i></span>
+                        <span> in New Jersey</span>
                     </div>
                 </div>
             </div>
         </section>
             
-        </div>
+
         
         <!-- Load in js files after to go faster -->
         <script src="//code.jquery.com/jquery-1.11.3.min.js"></script>

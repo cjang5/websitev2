@@ -89,7 +89,7 @@
     text-align: center;
 	overflow: hidden;
 	margin: 0 auto;
-	padding: 160px 0 10em 0;
+	padding: 13em 0 10em 0;
 	max-width: 1100px;
 	width: 90%;
 }
@@ -98,11 +98,12 @@
     font-family: 'Roboto Slab', sans-serif;
     font-weight: lighter;
 	margin: 0;
-	padding: 0.5em 0 0em;
+	
 	/*color: #be4856;*/
     color: #fff;
     /*text-shadow: 2.5px 2.5px #91463e;*/
-    text-shadow: 0.75px 0.75px #447120;
+    /*text-shadow: 0.75px 0.75px #447120;*/
+    text-shadow: 0.75px 0.75px #d47b2d;
 	text-align: center;
 	font-size: 5em;
 	font-size: 5vw;
@@ -113,7 +114,8 @@
     font-family: 'Roboto Slab', sans-serif;
     font-weight: lighter;
     margin: 0;
-    padding: 0.5em 0 0px;
+    
+    padding: 0.25em 0 0px;
     color: #fff;
     text-align: center;
     font-size: 3.0em;
@@ -121,31 +123,35 @@
 }
 
 .ip-main h3 .default {
-    text-shadow: 0.75px 0.75px #447120;   
+    text-shadow: 0.75px 0.75px #d47b2d;   
 }
 
 .ip-main h3 .programming {
     font-size: 0.9em;
     font-family: Consolas, monaco, monospace;
-    color: #447120;
+    color: #ff983d;
     text-shadow: none;
 }
 
 .ip-main h3 .design {
     font-size: 1.1em;
     font-family: Lobster, cursive;
-    text-shadow: 2px 2px #447120;
+    text-shadow: 2px 2px #ff983d;
 }
 
 /* Pseudo nav bar wrapper */
 .pseudo-nav-wrapper {
-    padding-bottom: 2em;
+    border-top: 5px solid #ff983d;
+    /*border-bottom: 5px solid #78c739;*/
+    background: #f5f5f5;
+    padding-bottom: 3.5em;
+    padding-top: 3.5em;
 }
 
 /* Pseudo nav bar */
 .pseudo-nav {
     z-index: 50;
-    margin-top: -50px;
+    margin-top: 0px;
     width: 100%;
     text-align: center;
     margin-bottom: 12vw;
@@ -162,10 +168,10 @@
  * the background of the "navbar"
  */
 .pseudo-nav .nav-bg {
-    -webkit-transition: all 0.4s;
-       -moz-transition: all 0.4s;
-         -o-transition: all 0.4s;
-            transition: all 0.4s;
+    -webkit-transition: all 0.3s;
+       -moz-transition: all 0.3s;
+         -o-transition: all 0.3s;
+            transition: all 0.3s;
 }
 
 .pseudo-nav .pn-buttons {
@@ -184,7 +190,8 @@
 }
 
 .bg-white {
-    background: white;
+    background: #f5f5f5;
+    border-bottom: 5px solid #414141;
 }
 
 /* Animate the button */
@@ -216,7 +223,9 @@
     cursor: pointer !important; /* change pointer when hovering over button */
 }
 
-/* When a button is active */
+/**
+ * The default behavior for when a button is active
+ */
 .nice-button:active {
     top: 5px;
     box-shadow: 0px 1px 0px 0px #3b81e1;
@@ -227,6 +236,45 @@
     background-color: #4b97ff;
     box-shadow: 0px 5px 0px 0px #3b81e1;
     text-shadow: 0px -2px #3b81e1;
+}
+
+.light-blue:active {
+    top: 5px;
+    box-shadow: 0px 1px 0px 0px #3b81e1;
+}
+
+/* Red color scheme for button */
+.red {
+    background-color: #ff586d;
+    box-shadow: 0px 5px 0px 0px #d24758;
+    text-shadow: 0px -2px #d24758;
+}
+
+.red:active {
+    top: 5px;
+    box-shadow: 0px 1px 0px 0px #d24758;   
+}
+
+/* Green color scheme for button */
+.green {
+    background-color: #78c739;
+    box-shadow: 0px 5px 0px 0px #5a952b;
+    text-shadow: 0px -2px #5a952b;
+}
+
+.green:active {
+    top: 5px;
+    box-shadow: 0px 1px 0px 0px #5a952b;   
+}
+
+/* Orange color scheme for button */
+.orange {
+    background: #ff983d;
+    box-shadow: 0px 5px 0px 0px #d47b2d;
+}
+
+.orange:active {
+    box-shadow: 0px 1px 0px 0px #d47b2d;   
 }
 
 .browser a {

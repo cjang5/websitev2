@@ -3,16 +3,16 @@ $(".pseudo-nav-wrapper").height($(".pseudo-nav").height());
 
 var tn = $(".pseudo-nav");
 var tns = "test-nav-scrolled";
-var height = $(".pseudo-nav").position().top - 50;
+var height = $(".pseudo-nav").position().top;
 
 $(window).scroll(function() {
     if ($(this).scrollTop() > height) {
         tn.addClass(tns);
-        $(".pseudo-nav-wrapper").addClass("wrapper-adjust");
+        //$(".pseudo-nav-wrapper").addClass("wrapper-adjust");
         $(".nav-bg").addClass("bg-white");
     } else {
         tn.removeClass(tns);
-        $(".pseudo-nav-wrapper").removeClass("wrapper-adjust");
+        //$(".pseudo-nav-wrapper").removeClass("wrapper-adjust");
         $(".nav-bg").removeClass("bg-white");
     }
 });
