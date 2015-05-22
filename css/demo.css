@@ -38,23 +38,14 @@ a {
 
 /* Demo colors */
 .demo-1 { 
-    /*background: #ef6e7e; */
-    /*background: #78c739;*/
     background-color: #2b2b2b;
-    background-image: url("../img/header-tile.jpg");
+    
+    background-image: url("../img/header/header-tile.jpg");
     background-size: 700px 500px;
     background-position: top;
     /*background-repeat: no-repeat;*/
     background-attachment: fixed;
 }
-.demo-1 a { 
-    /*color: #be4856;*/
-    /*color: #91463e;*/
-    color: #ef6e7e;
-}
-
-.demo-2 { background: #72d0f4; }
-.demo-2 a { color: #1c9ccd; }
 
 a:hover, a:focus {
 	color: #fff;
@@ -153,49 +144,6 @@ section {
 	color: inherit;
 }
 
-/* Related demos */
-.related {
-	padding: 2em 0 3em;
-    word-wrap: break-word;
-}
-
-.related p {
-    word-wrap: break-word;
-	font-size: 1.25em;
-	font-weight: 700;
-}
-
-.related > a {
-	border: 2px solid #000;
-	border-color: initial;
-	display: inline-block;
-	text-align: center;
-	margin: 20px 10px 0px;
-	padding: 30px 20px 20px;
-}
-
-.related a img {
-	max-width: 80%;
-	opacity: 0.8;
-}
-
-.related a:hover img,
-.related a:active img {
-	opacity: 1;
-}
-
-.related a:hover {
-    color: #fff;
-}
-
-.related a h3 {
-    font-size: 1.5em;
-	margin: 0;
-	padding: 0.5em 0.5em 0.3em;
-	max-width: 350px;
-	text-align: center;
-}
-
 /* Demo ad design */
 body #cdawrap {
 	background: none;
@@ -237,31 +185,44 @@ body #cdawrap:hover #cda-remove {
 }
 
 section.About {
-    background: #f5f5f5;   
+    background: #f5f5f5;
+    background: #ebeae5;
+    text-align: center;
+    
+    border-bottom: 2.5px solid #dfded9;
 }
 
-section.About .plswork {
-    font-family: 'Open Sans', sans-serif;
+section.About .container {
     border-radius: 8px;
-    background: rgba(0, 0, 0, 0.13);
-    padding: 10px 0 1.5em;
-    margin-top: 100px;
+    padding: 5em;
 }
 
-section.About h2 {
-    color: #fff;
-    font-size: 2.5em;
-    text-shadow: 0.75px 0.75px #447120;
+section h1 {
+    font-family: 'Montserrat', sans-serif;
+    color: #2b2b2b;
+    font-size: 3.5em;
+    /*text-shadow: 0.75px 0.75px #252525;*/
     font-weight: 600;
 }
 
+section hr {
+    border-color: #dfdfdf;
+    width: 50%;
+}
+
 section.About p {
-    font-size: 1.3em;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1.6em;
+    margin-bottom: 1.2em;
+}
+
+section.About #p2 {
+    margin-top: 1.4em;   
 }
 
 /* Pls buttons div */
 #contact-buttons {
-    padding-top: 50px;
+    padding-top: 1em;
     text-align: center;
 }
 
@@ -316,39 +277,47 @@ section.About p {
     box-shadow: 0px 1px 0px 0px #d47b2d;   
 }
 
-/* Developer Section */
-section.Developer {
-    background: #f5f5f5;
+.green-gray {
+    background: #90c5a9;
+    box-shadow: 0px 5px 0px 0px #7a9a95;
 }
 
-section.Developer .container {
+.green-gray:active {
+    box-shadow: 0px 1px 0px 0px #7a9a95;
+}
+
+/* Developer/Designer Section */
+section.Developer,
+section.Designer {
+    background: #f5f5f5;
+    background: #ebeae5;
+    text-align: center;
+    
+    border-top: 2.5px solid #dfded9;
+}
+
+section.Developer {
+    border-bottom: 2.5px solid #dfded9;   
+}
+
+section.Developer .container, 
+section.Designer .container {
     font-family: 'Open Sans', sans-serif;
     border-radius: 8px;
-    background: rgba(0, 0, 0, 0.13);
-    padding: 10px 1em 1.5em;
-    margin-top: 100px;
+    padding-top: 5em;
+    padding-bottom: 5em;
 }
 
-/* Modal for each project */
-section.Developer .p-modal {
-    position: relative;
-    display: block;
-    text-align: center;
-    max-width: 300px;
-    margin: 0 auto 1.5em;
-}
-
-section.Developer .p-modal img {
-    border-radius: 8px;   
+section.Developer #all-projects {
+    padding: 0;
+    margin-top: -4em;
 }
 
 /* Footer Section  */
 section.Footer {
     padding: 30px 50px 0px;
-    /*background: #91463e;*/
-    background: url("../img/footer-pattern.png");
+    background: url("../img/footer/footer-tile.jpg");
     background-size: 250px 250px;
-    
 }
 
 section.Footer .links {
