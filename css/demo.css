@@ -226,66 +226,6 @@ section.About #p2 {
     text-align: center;
 }
 
-/* Animations for the buttons */
-.animate {
-    -webkit-transition: all 0.1s;
-       -moz-transition: all 0.1s;
-         -o-transition: all 0.1s;
-            transition: all 0.1s;
-}
-
-/* Pls buttons pls owrk pls */
-.my-btn {
-    border-radius: 8px;
-    padding: 10px 40px;
-    text-decoration: none !important;
-    font-family: 'Montserrat', sans-serif;
-    color: #fff !important;
-    position: relative;
-    display: inline-block;
-    
-    /* Don't make it selectable */
-    -webkit-user-select: none;  
-       -moz-user-select: none;    
-        -ms-user-select: none;
-            user-select: none;
-    
-    /* change pointer when hovering over button */
-    cursor: pointer !important; 
-}
-
-.my-btn:active {
-    transform: translate(0, 5px);
-    -webkit-transform: translate(0, 5px);
-}
-
-.light-blue {
-    background: #4b97ff;
-    box-shadow: 0px 5px 0px 0px #3b81e1;
-}
-
-.light-blue:active {
-    box-shadow: 0px 1px 0px 0px #3b81e1;   
-}
-
-.orange {
-    background: #ff983d;
-    box-shadow: 0px 5px 0px 0px #d47b2d;
-}
-
-.orange:active {
-    box-shadow: 0px 1px 0px 0px #d47b2d;   
-}
-
-.green-gray {
-    background: #90c5a9;
-    box-shadow: 0px 5px 0px 0px #7a9a95;
-}
-
-.green-gray:active {
-    box-shadow: 0px 1px 0px 0px #7a9a95;
-}
-
 /* Developer/Designer Section */
 section.Developer,
 section.Designer {
@@ -311,6 +251,11 @@ section.Designer .container {
 section.Developer #all-projects {
     padding: 0;
     margin-top: -4em;
+}
+
+/* Designer carousel */
+section.Designer .carousel {
+    margin-bottom: 4em; 
 }
 
 /* Footer Section  */

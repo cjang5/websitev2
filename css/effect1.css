@@ -194,6 +194,7 @@
 /* Div for the actual buttons in the navbar */
 .pseudo-nav .pn-buttons {
     padding-top: 5px;
+    padding-bottom: 5px;
 }
 
 .wrapper-adjust {
@@ -210,91 +211,6 @@
 .bg-white {
     background: rgba(0, 0, 0, 0.75);
     /*border-bottom: 5px solid #414141;*/
-}
-
-/* Animate the button */
-.animate {
-    -webkit-transition: all 0.1s;
-    -moz-transition: all 0.1s;
-    -o-transition: all 0.1s;
-    transition: all 0.1s;
-}
-
-/* Nice Button :D */
-.nice-button {
-    position: relative;
-    display: inline-block;
-    color: #fff !important;
-    font-family: 'Montserrat', sans-serif;
-    font-size: 1.25em;
-    margin: 0px 10px 10px 0px;
-    padding: 10px 40px;
-    border-radius: 8px; /* Round corners */
-    text-decoration: none !important;
-    
-    /* Don't allow text to be selected cus fuckem :^) */
-    -webkit-user-select: none;  
-    -moz-user-select: none;    
-    -ms-user-select: none;
-    user-select: none;
-    
-    cursor: pointer !important; /* change pointer when hovering over button */
-}
-
-/**
- * The default behavior for when a button is active
- */
-.nice-button:active {
-    top: 5px;
-}
-
-/* Light blue color scheme for button */
-.light-blue {
-    background-color: #4b97ff;
-    box-shadow: 0px 5px 0px 0px #3b81e1;
-    text-shadow: 0px -2px #3b81e1;
-}
-
-.light-blue:active {
-    top: 5px;
-    box-shadow: 0px 1px 0px 0px #3b81e1;
-}
-
-/* Red color scheme for button */
-.red {
-    background-color: #ff586d;
-    box-shadow: 0px 5px 0px 0px #d24758;
-    text-shadow: 0px -2px #d24758;
-}
-
-.red:active {
-    top: 5px;
-    box-shadow: 0px 1px 0px 0px #d24758;   
-}
-
-/* Green color scheme for button */
-.green {
-    background-color: #78c739;
-    box-shadow: 0px 5px 0px 0px #5a952b;
-    text-shadow: 0px -2px #5a952b;
-}
-
-.green:active {
-    top: 5px;
-    box-shadow: 0px 1px 0px 0px #5a952b;   
-}
-
-/* Orange color scheme for button */
-.orange {
-    background: #ff983d;
-    background: #fa8b60;
-    box-shadow: 0px 5px 0px 0px #d47b2d;
-    box-shadow: 0px 5px 0px 0px #ef6d3b;
-}
-
-.orange:active {
-    box-shadow: 0px 1px 0px 0px #d47b2d;   
-    box-shadow: 0px 1px 0px 0px #ef6d3b;
 }
 
 .browser a {
