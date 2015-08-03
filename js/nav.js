@@ -16,4 +16,13 @@ $(window).scroll(function() {
         $(".nav-bg").removeClass("bg-white");
     }
 });
+
+// Scrolling for navbar buttons to elements on page
+$('a').click(function() {
+    $('html, body').animate({
+        scrollTop: $( $.attr(this, 'href') ).offset().top
+    }, 500);
+    
+    return false;
+});
     
