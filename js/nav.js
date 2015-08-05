@@ -45,7 +45,7 @@ var ModalEffects = (function() {
 
 				if( hasPerspective ) {
 					classie.remove( document.documentElement, 'md-perspective' );
-				}
+                }
 			}
 
 			function removeModalHandler() {
@@ -84,5 +84,5 @@ var ModalEffects = (function() {
 	}
 
 	init();
-
+    
 })();

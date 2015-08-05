@@ -55,7 +55,14 @@
 	display: inline-block;
 	background: #7a9a95;
 	color: #fff;
+    cursor: pointer;
+    text-decoration: none;
 }
+
+.grid figcaption a:hover {
+    background: #84a39e;
+}
+
 .cs-style-3 figure {
 	overflow: hidden;
 }
@@ -180,6 +187,7 @@
 	position: relative;
 	border-radius: 3px;
 	margin: 0 auto;
+    font-family: 'Open Sans', sans-serif;
 }
 
 .md-content h3 {
@@ -191,23 +199,24 @@
 	opacity: 0.8;
 	background: rgba(0,0,0,0.1);
 	border-radius: 3px 3px 0 0;
+    font-family: 'Montserrat', sans-serif;
 }
 
 .md-content > div {
 	padding: 15px 40px 30px;
 	margin: 0;
 	font-weight: 300;
-	font-size: 1.20em;
+	font-size: 1.10em;
 }
 
 .md-content > div p {
 	margin: 0;
 	padding: 10px 0;
-    font-size: 1.20em;
+    font-size: 1.1em;
 }
 
 .md-content .modal-para {
-    padding-left: 40px;
+    
     padding-bottom: 30px;
     font-size: 1.10em !important;
 }
@@ -216,6 +225,18 @@
 	display: block;
 	margin: 0 auto;
 	font-size: 0.8em;
+}
+
+.md-content .md-learn {
+    text-align: center;
+}
+
+.md-content .md-learn a {
+    font-family: 'Open Sans', sans-serif;
+    color: white;
+    padding: 5px 10px;
+    border-radius: 2px;
+    background: rgba(0, 0, 0, 0.1);
 }
 
 /* Individual modal styles with animations/transitions */
