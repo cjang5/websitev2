@@ -161,7 +161,7 @@
 	left: 0;
 	z-index: 1000;
 	opacity: 0;
-	background: rgba(143,27,15,0.8);
+	background: rgba(0, 0, 0, 0.6);
 	-webkit-transition: all 0.3s;
 	-moz-transition: all 0.3s;
 	transition: all 0.3s;
@@ -176,7 +176,7 @@
 /* Content styles */
 .md-content {
 	color: #fff;
-	background: #e74c3c;
+	background: #fa8b60;
 	position: relative;
 	border-radius: 3px;
 	margin: 0 auto;
@@ -197,21 +197,19 @@
 	padding: 15px 40px 30px;
 	margin: 0;
 	font-weight: 300;
-	font-size: 1.15em;
+	font-size: 1.20em;
 }
 
 .md-content > div p {
 	margin: 0;
 	padding: 10px 0;
+    font-size: 1.20em;
 }
 
-.md-content > div ul {
-	margin: 0;
-	padding: 0 0 30px 20px;
-}
-
-.md-content > div ul li {
-	padding: 5px 0;
+.md-content .modal-para {
+    padding-left: 40px;
+    padding-bottom: 30px;
+    font-size: 1.10em !important;
 }
 
 .md-content button {
