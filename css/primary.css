@@ -92,6 +92,13 @@
 	padding: 13em 0 10em 0;
 	max-width: 1100px;
 	width: 90%;
+    /* make text unselectable */
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
 }
 
 .ip-main h2 {
